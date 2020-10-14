@@ -25,7 +25,7 @@ parameters = {
   "base": base_currency
 }
 # base_currency, target_currency = "USD", "PLN"
-exchange_rate = requests.get("https://api.exchangeratesapi.io/latest?base={}&symbols={}".format(base_currency, target_currency))  # modyfing link
+exchange_rate = requests.get("https://api.exchangeratesapi.io/latest?base={}&symbols={}".format(base_currency, target_currency))  # modifying link
 exchange_rate_p = requests.get("https://api.exchangeratesapi.io/latest", params=parameters) # passing parameteres to request
 # print(json.dumps(exchange_rate.json(), sort_keys=True))
 # print(exchange_rate.json()["rates"])
